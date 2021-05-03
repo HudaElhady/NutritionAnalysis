@@ -10,6 +10,9 @@
 		1E2889AE26400F9D002E46A4 /* NutritionAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2889AD26400F9D002E46A4 /* NutritionAnalysisViewController.swift */; };
 		1E2889B626401088002E46A4 /* StoryBoardsIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2889B526401088002E46A4 /* StoryBoardsIDs.swift */; };
 		1E2889BB26402F91002E46A4 /* NutritionAnalysisTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2889BA26402F91002E46A4 /* NutritionAnalysisTableCell.swift */; };
+		1E2889C12640A925002E46A4 /* BaseRepoMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2889C02640A925002E46A4 /* BaseRepoMock.swift */; };
+		1E2889C92640A97D002E46A4 /* RecipeAnalysisRepoMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2889C82640A97D002E46A4 /* RecipeAnalysisRepoMock.swift */; };
+		1E2889CE2640AA3E002E46A4 /* AddIngredientsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2889CD2640AA3E002E46A4 /* AddIngredientsTests.swift */; };
 		1E806491263D8BBD001AF284 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E806490263D8BBD001AF284 /* AppDelegate.swift */; };
 		1E806493263D8BBD001AF284 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E806492263D8BBD001AF284 /* SceneDelegate.swift */; };
 		1E806495263D8BBD001AF284 /* AddIngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E806494263D8BBD001AF284 /* AddIngredientsViewController.swift */; };
@@ -56,6 +59,9 @@
 		1E2889AD26400F9D002E46A4 /* NutritionAnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionAnalysisViewController.swift; sourceTree = "<group>"; };
 		1E2889B526401088002E46A4 /* StoryBoardsIDs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoardsIDs.swift; sourceTree = "<group>"; };
 		1E2889BA26402F91002E46A4 /* NutritionAnalysisTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionAnalysisTableCell.swift; sourceTree = "<group>"; };
+		1E2889C02640A925002E46A4 /* BaseRepoMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepoMock.swift; sourceTree = "<group>"; };
+		1E2889C82640A97D002E46A4 /* RecipeAnalysisRepoMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAnalysisRepoMock.swift; sourceTree = "<group>"; };
+		1E2889CD2640AA3E002E46A4 /* AddIngredientsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIngredientsTests.swift; sourceTree = "<group>"; };
 		1E80648D263D8BBD001AF284 /* NutritionAnalysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutritionAnalysis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E806490263D8BBD001AF284 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E806492263D8BBD001AF284 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +127,16 @@
 			path = NutritionAnalysis;
 			sourceTree = "<group>";
 		};
+		1E2889BF2640A902002E46A4 /* ReposMock */ = {
+			isa = PBXGroup;
+			children = (
+				1E2889C02640A925002E46A4 /* BaseRepoMock.swift */,
+				1E2889C82640A97D002E46A4 /* RecipeAnalysisRepoMock.swift */,
+				1E2889CD2640AA3E002E46A4 /* AddIngredientsTests.swift */,
+			);
+			path = ReposMock;
+			sourceTree = "<group>";
+		};
 		1E806484263D8BBD001AF284 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +177,7 @@
 		1E8064A6263D8BC0001AF284 /* NutritionAnalysisTests */ = {
 			isa = PBXGroup;
 			children = (
+				1E2889BF2640A902002E46A4 /* ReposMock */,
 				1E8064A7263D8BC0001AF284 /* NutritionAnalysisTests.swift */,
 				1E8064A9263D8BC0001AF284 /* Info.plist */,
 			);
@@ -412,6 +429,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E2889CE2640AA3E002E46A4 /* AddIngredientsTests.swift in Sources */,
+				1E2889C12640A925002E46A4 /* BaseRepoMock.swift in Sources */,
+				1E2889C92640A97D002E46A4 /* RecipeAnalysisRepoMock.swift in Sources */,
 				1E8064A8263D8BC0001AF284 /* NutritionAnalysisTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

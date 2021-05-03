@@ -16,19 +16,8 @@ class NutritionAnalysisViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        setDocumentData(title:document?.title ?? "", authorName: document?.authorName ?? "")
     }
-    
-//    func setDocumentData(title: String, authorName: String) {
-//        titleLabel.text = title
-//        authorLabel.text = authorName
-//    }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == isbnSegue, let isbnVC = segue.destination as? IsbnListViewController {
-//            isbnVC.updateDataSource(isbnsArray: document?.isbnList ?? [])
-//        }
-//    }
+
     
     static func create(analysis: [CA]) -> NutritionAnalysisViewController {
         if let vc = UIStoryboard(name: StoryBoardsIDs.main.id, bundle: nil).instantiateViewController(withIdentifier: ViewControllersIDs.NutritionAnalysisVC.id) as? NutritionAnalysisViewController {

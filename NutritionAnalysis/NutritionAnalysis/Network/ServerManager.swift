@@ -33,8 +33,9 @@ extension HttpMethod {
 
 extension URLSession {
     func load<A>(_ resource: Resource<A>, completion: @escaping (Result<A, NetworkError>) -> Void) {
-        dataTask(with: resource.urlRequest) { data, _, error in
+        dataTask(with: resource.urlRequest) { data, response, error in
             DispatchQueue.main.async {
+                print(response)
             if data != nil, let result = data.flatMap(resource.parse) {
                 completion(.success(result))
             } else if error != nil {

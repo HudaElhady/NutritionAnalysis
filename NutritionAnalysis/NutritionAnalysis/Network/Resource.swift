@@ -19,6 +19,7 @@ extension Resource where A: Decodable {
         switch method {
         case .get: ()
         case .post(let body):
+            self.urlRequest.allHTTPHeaderFields = ["Content-Type":"application/json"]
             self.urlRequest.httpBody = try! JSONEncoder().encode(body)
         }
         self.parse = { data in
